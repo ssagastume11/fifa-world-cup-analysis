@@ -1,6 +1,7 @@
 # FIFA World Cup Analysis - 2018
 
-### Author: Sergio E. Sagastume 
+**Author:** Sergio E. Sagastume 
+
 **Repository:** [fifa-world-cup-analysis](https://github.com/ssagastume11/fifa-world-cup-analysis)
 
 ---
@@ -10,3 +11,5 @@ This project analyzes player-level data from the 2018 FIFA World Cup. It focuses
 
 ## 🌍 Scenario
 I'm a junior data analyst working on a portfolio project to improve my skills in R and data storytelling. I chose the 2018 FIFA World Cup dataset to explore patterns in player attributes such as age, club affiliation, and nationality.
+
+---
