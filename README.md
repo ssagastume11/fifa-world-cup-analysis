@@ -54,4 +54,16 @@ squads <- squads %>%
 
 ## 📊 Analyze
 
-![Age distributuion]()
+![Age distributuion](https://raw.githubusercontent.com/ssagastume11/fifa-world-cup-analysis/refs/heads/main/team_age_exp.png)
+```{r}
+# Age distribution
+ggplot(squads, aes(x = Age)) +
+  geom_histogram(binwidth = 1, fill = "skyblue", color = "black") +
+  labs(title = "Distribution of Player Ages in 2018 World Cup",
+       x = "Player Age", y = "Count of Players",
+       caption = "Source: 2018 FIFA World Cup Squad Data (CSV)") +
+  theme_minimal()
+
+```
+
+---
