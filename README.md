@@ -13,3 +13,22 @@ This project analyzes player-level data from the 2018 FIFA World Cup. It focuses
 I'm a junior data analyst working on a portfolio project to improve my skills in R and data storytelling. I chose the 2018 FIFA World Cup dataset to explore patterns in player attributes such as age, club affiliation, and nationality.
 
 ---
+
+## ❓ Ask
+**Business Task:** Analyze squad compositions at the 2018 FIFA World Cup to identify trends in player age, experience, and positions across different national teams.
+
+---
+
+## 📦 Prepare
+**Dataset:** 2018 FIFA World Cup Squads
+**Source:** [2018 FIFA World Cup Squads Dataset](https://www.kaggle.com/datasets/cclayford/2018-fifa-world-cup-squads)
+
+```{r}
+# Load libraries
+library(tidyverse)
+library(ggplot2)
+
+# Read dataset
+squads <- read_csv("2018 FIFA World Cup Squads.csv")
+
+```
