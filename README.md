@@ -30,6 +30,28 @@ library(tidyverse)
 library(ggplot2)
 
 # Read dataset
-squads <- read_csv("2018 FIFA World Cup Squads.csv")
+squads <- read_csv("2018 FIFA World Cup Analysis/2018 FIFA World Cup Squads.csv")
 
 ```
+
+---
+
+## 🧹 Process
+
+Data cleaning included:
+- Renaming column headers
+- Cleaning inconsistent strings
+- Extracting features like player age
+- Removing missing and irrelevant rows
+
+```{r}
+# Clean column names
+squads <- squads %>%
+  rename_all(~ str_replace_all(., " ", "_")) %>%
+  filter(!is.na(Age))
+
+```
+
+## 📊 Analyze
+
+![Age distributuion]()
