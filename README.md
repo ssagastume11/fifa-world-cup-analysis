@@ -67,3 +67,31 @@ ggplot(squads, aes(x = Age)) +
 ```
 
 ---
+
+## 📣 Share
+This analysis was compiled using RMarkdown and includes visualizations and summaries to help sports enthusiasts and data students understand player distribution and team patterns during the 2018 tournament.
+
+---
+
+## ✅ Act
+Results translated into useful results for readers:
+```{r}
+# Identify youngest and oldest teams
+team_ages <- squads %>%
+  group_by(Country) %>%
+  summarise(avg_age = mean(Age, na.rm = TRUE)) %>%
+  arrange(desc(avg_age))
+
+print(team_ages)
+
+```
+This result helps compare the average ages of teams, which is useful for coaches, fans, and analysts who want to understand how age influences team strategy or tournament performance.
+
+---
+
+## 💡 Recommendations
+1. **Explore Club Representation**: Analyze which clubs contributed the most players to the tournament.
+2. **Extend to Match Stats**: Combine this with performance data to assess how age or club affiliation affects match outcomes.
+3. **Visualize Geography**: Trace player nationality to see global patterns.
+4. **Compare Across Tournaments**: Expand the dataset to include other FIFA World Cup years.
+5. **Build Interactive Dashboard**: Use Shiny or Tableau for dynamic team and player exploration.
